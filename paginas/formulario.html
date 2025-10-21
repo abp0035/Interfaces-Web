@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ballers - Formulario</title>
+    <link rel="stylesheet" href="../css/generico.css">
+    <link rel="stylesheet" href="../css/formulario.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+    
+</head>
+<body>
+
+     <header class="header">
+        
+        <div class="logo">
+                <img src="../imagenes/varios/logo.png" alt="ballersLogo">
+            <span>BALLERS</span>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="./productos.html"  >CAMISETAS</a></li>
+                <li><a href="./productos2.html">MERCHANDISING</a></li>
+                <li><a href="./formulario.html" class="activo"> CONTACTO</a></li>
+            </ul>
+        </nav>
+        <div class="usuarioCarrito"> 
+            <a href="./carrito.html"><img src="../imagenes/iconos/iconoCarrito.png" alt="iconoCarrito" class="iconoNav"></a>
+            <a href="./logIn.html"><img src="../imagenes/iconos/iconoLogIn.png" alt="iconoUsuario" class="iconoNav"></a>
+        </div>
+    </header>
+
+
+    <main class="contenedor">
+
+ <section class="seccionContacto contenedor">
+  <h2>Contacto</h2>
+
+  <form class="formularioContacto" action="#" method="post" novalidate>
+    
+    <fieldset class="bloqueFormulario">
+      <legend>Datos personales</legend>
+
+      <div class="filaFormulario">
+        <div class="campoFormulario">
+          <label class="etiqueta" for="nombre">Nombre *</label>
+          <input class="control" type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+        </div>
+
+        <div class="campoFormulario">
+          <label class="etiqueta" for="apellidos">Apellidos *</label>
+          <input class="control" type="text" id="apellidos" name="apellidos" placeholder="Tus apellidos" required>
+        </div>
+      </div>
+
+      <div class="filaFormulario">
+        <div class="campoFormulario">
+          <label class="etiqueta" for="email">Email *</label>
+          <input class="control" type="email" id="email" name="email" placeholder="nombre@correo.com" required>
+        </div>
+
+        <div class="campoFormulario">
+          <label class="etiqueta" for="telefono">Teléfono</label>
+          <input class="control" type="tel" id="telefono" name="telefono" placeholder="+34 600 123 123" pattern="[\d\s+\-()]{6,}">
+          <small class="ayuda">Formato libre: números, espacios o guiones</small>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset class="bloqueFormulario">
+      <legend>Consulta</legend>
+
+      <div class="filaFormulario">
+        <div class="campoFormulario">
+          <label class="etiqueta" for="motivo">Motivo *</label>
+          <select class="control" id="motivo" name="motivo" required>
+            <option value="" selected disabled>Elige una opción</option>
+            <option value="pedido">Duda sobre un pedido</option>
+            <option value="producto">Información de producto</option>
+            <option value="devolucion">Devoluciones</option>
+            <option value="cita">Pedir cita en tienda</option>
+            <option value="otros">Otros</option>
+          </select>
+        </div>
+
+        <div class="campoFormulario">
+          <label class="etiqueta">Prefiero respuesta por</label>
+          <div class="opcionesLinea">
+            <label class="opcion"><input type="radio" name="preferencia" value="email" checked> Email</label>
+            <label class="opcion"><input type="radio" name="preferencia" value="telefono"> Teléfono</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="campoFormulario">
+        <label class="etiqueta" for="mensaje">Mensaje *</label>
+        <textarea class="control area" id="mensaje" name="mensaje" rows="6" placeholder="Cuéntanos en qué podemos ayudarte" required></textarea>
+      </div>
+    </fieldset>
+
+    <div class="filaFormulario">
+      <label class="checkLinea">
+        <input type="checkbox" id="politica" name="politica" required>
+        Acepto la política de privacidad *
+      </label>
+      <label class="checkLinea">
+        <input type="checkbox" id="boletin" name="boletin">
+        Quiero recibir ofertas y novedades
+      </label>
+    </div>
+
+    <div class="accionesFormulario">
+      <button type="submit" class="botonPrincipal">Enviar</button>
+      <button type="reset" class="botonSecundario">Limpiar</button>
+    </div>
+
+  </form>
+</section>
+
+
+    </main>
+
+   
+    <footer>
+  <div class="contenidoFooter">
+
+    <div class="logoFooter">
+      <img src="../imagenes/varios/logo.png" alt="Logo Ballers">
+    </div>
+
+    <div class="enlacesFooter">
+      <h4>Sobre nosotros</h4>
+      <ul>
+        <li><a href="#">Sobre Ballers</a></li>
+        <li><a href="#">¿Por qué Ballers?</a></li>
+        <li><a href="#">Historia</a></li>
+      </ul>
+    </div>
+
+    <div class="contactoFooter">
+      <h4>Contáctanos</h4>
+      <p><a href="mailto:ballers@gmail.com">ballers@gmail.com</a></p>
+      <p><a href="tel:+9779765346808">+977 9765346808</a></p>
+    </div>
+
+    <div class="socialFooter">
+      <h4>Redes sociales</h4>
+      <div class="iconosSociales">
+        <a href="#" aria-label="Facebook"><img src="../imagenes/iconos/facebook.png" alt="Facebook"></a>
+        <a href="#" aria-label="Twitter"><img src="../imagenes/iconos/twitter.png" alt="Twitter"></a>
+        <a href="#" aria-label="Instagram"><img src="../imagenes/iconos/instagram.png" alt="Instagram"></a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+</body>
+</html>

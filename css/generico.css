@@ -1,0 +1,162 @@
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+/* HEADER */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 6%; 
+  background: #000;
+  color: #fff;
+  position: relative;
+  z-index: 10;
+  font-size: 1.3em; 
+  border-bottom: 7px solid transparent;
+  border-image: linear-gradient(90deg, #ff00ff, #ffdd00, #00ffff) 1;
+}
+.header .logo,
+.header .logo a,
+.header .logo span {
+  font-family: "Poppins", sans-serif; 
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: .5px;
+  color: #fff;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.header .logo a:link,
+.header .logo a:visited,
+.header .logo a:hover,
+.header .logo a:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.logo img{
+  height:32px;        
+  width:auto;
+  display:block;
+}
+.logo span{ color:#fff; font-weight:700; }
+
+/* NAV */
+.nav ul{ list-style:none; display:flex; gap:24px; margin:0; padding:0; }
+.nav a{
+  color:#fff;                 
+  text-decoration:none;
+  font-weight:700;
+  padding-bottom:5px;
+  border-bottom:2px solid transparent;
+  transition:border-color .25s;
+}
+.nav a:hover,
+.nav a.activo{ border-color:#fff; }
+
+.usuarioCarrito{
+  display:flex;
+  align-items:center;
+  gap:15px;
+}
+.iconoNav{
+  width:35px; height:35px; object-fit:contain; display:block;
+}
+
+
+/* --- Footer  --- */
+
+footer {
+  background-color: #1a1a1a;
+  color: #ddd;
+  padding: 40px 8%;
+  border-top: 7px solid transparent;
+  border-image: linear-gradient(90deg, #ff00ff, #ffdd00, #00ffff) 1;
+}
+
+.contenidoFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  gap: 80px;
+  text-align: left;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+footer ul li {
+    margin-bottom: 8px;
+}
+
+.logoFooter img {
+  height: 100px;
+}
+
+.enlacesFooter, .contactoFooter, .socialFooter {
+  min-width: 200px;
+}
+
+footer h4 {
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 2.1em;
+}
+
+footer a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #ff5722;
+}
+
+.contactoFooter a {
+  display: block;
+  margin-bottom: 5px;
+  color: #ccc;
+  font-weight: 500;
+}
+
+.contactoFooter a:hover {
+  color: #ff5722;
+}
+
+.iconosSociales {
+  display: flex;
+  gap: 12px;
+}
+
+.iconosSociales img {
+  height: 22px;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.iconosSociales img:hover {
+  opacity: 1;
+}
+
+
