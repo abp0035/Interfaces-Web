@@ -40,9 +40,7 @@ body {
   line-height: 1;
 }
 
-.header .logo a:link,
-.header .logo a:visited,
-.header .logo a:hover,
+
 .header .logo a:active {
   color: #fff;
   text-decoration: none;

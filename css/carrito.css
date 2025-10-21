@@ -37,9 +37,7 @@
   border-bottom: 1px solid #f3f3f3;
 }
 
-.filaCarrito:last-child {
-  border-bottom: none;
-}
+
 
 .cabeceraCarrito {
   background-color: #fbf2e7;
@@ -140,10 +138,6 @@
   padding: 10px 6px;
   border-bottom: 1px solid #efdfcf;
   color: #444444;
-}
-
-.lineaResumen:last-of-type {
-  border-bottom: none;
 }
 
 .totalResumen {
