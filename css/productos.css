@@ -60,6 +60,16 @@
     width: calc(25% - 15px);   
     min-width: 220px;          
 }
+.tarjetaProducto p {
+  font-family: 'Poppins', sans-serif;
+  color: #222; 
+}
+
+.tarjetaProducto:hover .precioProducto {
+  color: #e64a19;
+  transform: scale(1.05);
+  transition: all 0.2s ease;
+}
 
 .tarjetaProducto img {
     max-width: 100%;
