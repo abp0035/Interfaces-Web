@@ -51,6 +51,7 @@ body {
   align-items:center;
   gap:10px;
 }
+.logo a{ display:flex; align-items:center; gap:10px; text-decoration:none; }
 .logo img{
   height:32px;        
   width:auto;
@@ -94,7 +95,7 @@ footer {
 .contenidoFooter {
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: flex-start; 
   gap: 80px;
   text-align: left;
   max-width: 1200px;
