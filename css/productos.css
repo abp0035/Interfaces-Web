@@ -59,6 +59,9 @@
     box-sizing: border-box;
     width: calc(25% - 15px);   
     min-width: 220px;          
+    background-color: #fff;
+    border: 1px solid #eee;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 .tarjetaProducto p {
   font-family: 'Poppins', sans-serif;
@@ -69,6 +72,11 @@
   color: #e64a19;
   transform: scale(1.05);
   transition: all 0.2s ease;
+}
+
+.tarjetaProducto:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
 }
 
 .tarjetaProducto img {

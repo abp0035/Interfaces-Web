@@ -35,7 +35,8 @@
   width: calc(25% - 15px);
   min-width: 220px;
       transition: transform 0.15s ease, box-shadow 0.15s ease;
-
+  background-color: #fff;
+  border: 1px solid #eee;
 }
 
 
@@ -65,6 +66,10 @@
 .tarjetaProducto a {
   text-decoration: none;
   color: inherit;
+}
+.tarjetaProducto:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
 }
 .verMas {
     color: #ff9900;
