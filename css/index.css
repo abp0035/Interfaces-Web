@@ -1,4 +1,31 @@
 
+
+#audioAmbiente {
+    display: none;
+}
+
+.contenedorAudio {
+  display: flex;
+  justify-content: center;
+}
+
+#botonAudio {
+  padding: 0.6rem 1.4rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+.contenedorVideo {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 30px;
+}
+
+
 .slider {
   width: 100vw;
   margin: 0;
