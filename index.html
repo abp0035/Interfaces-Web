@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BALLERS | Tienda Fútbol Vintage</title>
-  <link rel="icon" href="./imagenes/varios/logo.ico" type="image/x-icon">
+  <link rel="icon" href="./assets/imagenes/varios/logo.ico" type="image/x-icon">
   <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="./css/generico.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
   <header class="header">
 
     <div class="logo">
-      <a href="./index.html"><img src="./imagenes/varios/logo.ico" alt="ballersLogo"><span>BALLERS</span></a>
+      <a href="./index.html"><img src="./assets/imagenes/varios/logo.ico" alt="ballersLogo"><span>BALLERS</span></a>
     </div>
     <nav class="nav">
       <ul>
@@ -30,16 +30,16 @@
     </nav>
             <!--AUDIO-->
 <div class="contenedorAudio">
-    <audio id="audioAmbiente" src="audios/deep-abstract-ambient_snowcap-401656.mp3"></audio>
+  <audio id="audioAmbiente" src="assets/audios/deep-abstract-ambient_snowcap-401656.mp3"></audio>
     <button id="botonAudio">▶ Música </button>
 </div>
 
 
 
     <div class="usuarioCarrito">
-      <a href="./paginas/carrito.html"><img src="./imagenes/iconos/iconoCarrito.png" alt="iconoUsuario"
+        <a href="./paginas/carrito.html"><img src="./assets/imagenes/iconos/iconoCarrito.png" alt="iconoUsuario"
           class="iconoNav"></a>
-      <a href="./paginas/logIn.html"><img src="./imagenes/iconos/iconoLogIn.png" alt="iconoCarrito"
+        <a href="./paginas/logIn.html"><img src="./assets/imagenes/iconos/iconoLogIn.png" alt="iconoCarrito"
           class="iconoNav"></a>
     </div>
     
@@ -47,16 +47,29 @@
 
 
 
-  <section class="slider">
-    <img src="./imagenes/varios/bannerHome.png" alt="sliderHome">
-  </section>
-  
+<!--SLIDER Dinámico  -->
+
+<div class="slider">
+    <div class="slides">
+        <div class="slide">
+            <img src="/assets/imagenes/varios/botas1.webp" alt="Imagen 1">
+        </div>
+        <div class="slide">
+            <img src="assets/imagenes/varios/botas2.webp" alt="Imagen 2">
+        </div>
+        <div class="slide">
+            <img src="assets/imagenes/varios/botas3.webp" alt="Imagen 3">
+        </div>
+    </div>
+</div>
+
+
 
   <div class="contenedorVideo">
   <h3>Nuevas Zapatillas 19K</h3>
   <!--VIDEO-->
-  <video controls width="480">
-    <source src="videos/Video_Promocional_De_Zapatillas_Nuevas.mp4" type="video/mp4">
+    <video controls width="480">
+    <source src="assets/videos/Video_Promocional_De_Zapatillas_Nuevas.mp4" type="video/mp4">
   </video>
   </div>
 
@@ -69,7 +82,7 @@
 
       <div class="tarjetaOferta">
         <div class="imagenContenedor">
-          <img src="./imagenes/camisetaBarca.png" alt="Camiseta Barca">
+          <img src="./assets/imagenes/camisetaBarca.png" alt="Camiseta Barca">
           <span class="descuento">-30%</span>
         </div>
         <div class="infoOferta">
@@ -84,7 +97,7 @@
 
       <div class="tarjetaOferta">
         <div class="imagenContenedor">
-          <img src="./imagenes/camisetaLyon.png" alt="Camiseta PSG">
+          <img src="./assets/imagenes/camisetaLyon.png" alt="Camiseta PSG">
           <span class="descuento">-30%</span>
         </div>
         <div class="infoOferta">
@@ -99,7 +112,7 @@
 
       <div class="tarjetaOferta">
         <div class="imagenContenedor">
-          <img src="./imagenes/camisetaBalotelli.png" alt="Camiseta Balotelli" class="imagenProducto">
+          <img src="./assets/imagenes/camisetaBalotelli.png" alt="Camiseta Balotelli" class="imagenProducto">
           <span class="descuento">-50%</span>
         </div>
         <div class="infoOferta">
@@ -119,15 +132,15 @@
     <h2>Principales categorías</h2>
     <div class="categoriasGrid">
       <a class="catCard" href="./paginas/productos.html">
-        <div class="cat-img"><img src="./imagenes/iconos/liga.png" alt="ligas"></div>
+        <div class="cat-img"><img src="./assets/imagenes/iconos/liga.png" alt="ligas"></div>
         <span>LIGAS</span>
       </a>
       <a class="catCard" href="./paginas/productos.html">
-        <div class="cat-img"><img src="./imagenes/iconos/naciones.png" alt="naciones"></div>
+        <div class="cat-img"><img src="./assets/imagenes/iconos/naciones.png" alt="naciones"></div>
         <span>NACIONES</span>
       </a>
       <a class="catCard" href="">
-        <div class="cat-img"><img src="./imagenes/iconos/champions.png" alt="champions"></div>
+        <div class="cat-img"><img src="./assets/imagenes/iconos/champions.png" alt="champions"></div>
         <span>CHAMPIONS</span>
       </a>
     </div>
@@ -135,7 +148,7 @@
 
   <section class="mosaicoContacto">
     <div class="mosaico">
-      <div class="m1 img"><img src="./imagenes/varios/image.png" alt="0"></div>
+      <div class="m1 img"><img src="./assets/imagenes/varios/image.png" alt="0"></div>
       <div class="m2 panel">
         <h3>¡Visítanos!</h3>
         <p>📍 Calle de Avd del Paraíso 13<br>Montepinár</p>
@@ -145,7 +158,7 @@
         <h3>Pide cita para vender tus camisetas de fútbol! ⚽</h3>
         <a class="btn2" href="./paginas/formulario.html">Contacto</a>
       </div>
-      <div class="m4 img"><img src="./imagenes/varios/image1.png" alt="1"></div>
+      <div class="m4 img"><img src="./assets/imagenes/varios/image1.png" alt="1"></div>
     </div>
   </section>
 
@@ -154,8 +167,8 @@
   <footer>
     <div class="contenidoFooter">
 
-      <div class="logoFooter">
-        <img src="./imagenes/varios/logo.ico" alt="Logo Ballers">
+        <div class="logoFooter">
+        <img src="./assets/imagenes/varios/logo.ico" alt="Logo Ballers">
       </div>
 
       <div class="enlacesFooter">
@@ -176,9 +189,9 @@
       <div class="socialFooter">
         <h4>Redes sociales</h4>
         <div class="iconosSociales">
-          <a href="#" aria-label="Facebook"><img src="./imagenes/iconos/facebook.png" alt="Facebook"></a>
-          <a href="#" aria-label="Twitter"><img src="./imagenes/iconos/twitter.png" alt="Twitter"></a>
-          <a href="#" aria-label="Instagram"><img src="./imagenes/iconos/instagram.png" alt="Instagram"></a>
+          <a href="#" aria-label="Facebook"><img src="./assets/imagenes/iconos/facebook.png" alt="Facebook"></a>
+          <a href="#" aria-label="Twitter"><img src="./assets/imagenes/iconos/twitter.png" alt="Twitter"></a>
+          <a href="#" aria-label="Instagram"><img src="./assets/imagenes/iconos/instagram.png" alt="Instagram"></a>
         </div>
       </div>
 
