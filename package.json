@@ -1,0 +1,20 @@
+{
+  "name": "ballers-tienda",
+  "version": "1.0.0",
+  "description": "Tienda de fútbol vintage BALLERS",
+  "scripts": {
+    "sass": "sass scss/main.scss css/main.css --watch",
+    "sass:build": "sass scss/main.scss css/main.css --style compressed",
+    "build": "npm run sass:build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.69.5"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.2"
+  }
+}
+
