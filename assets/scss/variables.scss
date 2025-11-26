@@ -1,10 +1,25 @@
-// Colores base 
-$color-principal: #ff9900;   
-$color-fondo-tarjeta: #fff;
-$color-borde-suave: #eee;
+$color-principal: #ff9900;
+$color-texto: #000;
+$color-texto-suave: #444444;
+$color-texto-secundario: #666666;
 
-// Tipografías
+$color-fondo-tarjeta: #ffffff;
+$color-borde-suave: #eeeeee;
+$color-borde-medio: #dddddd;
+
+$color-acento: #ff5722;
+
+$color-principal: #ff9900;
+$color-fondo-tarjeta: #ffffff;
+$color-borde-suave: #eeeeee;
+
+
 $font-base: "Montserrat", sans-serif;
+$font-secundaria: "Poppins", sans-serif;
 
-// Sombra para tarjetas
+
+$font-base: "Montserrat", sans-serif;
+$font-secundaria: "Poppins", sans-serif;
+
+$sombra-suave: 0 8px 24px rgba(0, 0, 0, 0.06);
 $sombra-hover: 0 8px 20px rgba(0, 0, 0, 0.15);

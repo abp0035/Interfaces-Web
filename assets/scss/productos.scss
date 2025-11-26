@@ -1,0 +1,111 @@
+.seccionLigas {
+  margin-top: 40px;
+  margin-bottom: 60px;
+
+  h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    display: inline-block;
+    padding-bottom: 5px;
+    border-bottom: 3px solid $color-principal;
+  }
+}
+
+.seccionPopulares {
+  margin-bottom: 60px;
+
+  h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    display: inline-block;
+    padding-bottom: 5px;
+    border-bottom: 3px solid $color-principal;
+  }
+}
+
+.listaLigas {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  text-align: center;
+}
+
+.itemLiga {
+  text-decoration: none;
+  font-weight: bold;
+
+  img {
+    height: 60px;
+    margin-bottom: 10px;
+  }
+
+  span {
+    display: block;
+    font-weight: bold;
+    color: $color-texto;
+    margin-top: 5px;
+  }
+}
+
+.gridProductos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.tarjetaProducto {
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  width: calc(25% - 15px);
+  min-width: 220px;
+  background-color: $color-fondo-tarjeta;
+  border: 1px solid $color-borde-suave;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+  img {
+    max-width: 100%;
+    height: 160px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    background-color: $color-fondo-tarjeta;
+    border-radius: 5px;
+  }
+
+  p {
+    margin: 5px 0;
+    font-family: $font-base;
+    color: #222;
+  }
+
+  .precioProducto {
+    color: inherit;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  &:hover {
+    box-shadow: $sombra-hover;
+    transform: translateY(-2px);
+
+    .precioProducto {
+      color: #e64a19; // si quieres, también lo llevas a variable
+      transform: scale(1.05);
+      transition: all 0.2s ease;
+    }
+  }
+}
+
+.contenedorBotonVerMas {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.verMas {
+  color: $color-principal;
+  text-decoration: underline;
+  font-weight: bold;
+}

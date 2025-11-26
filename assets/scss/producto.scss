@@ -1,0 +1,183 @@
+.seccionProducto {
+  padding: 40px 5%;
+}
+
+.productoPrincipal {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.galeriaProducto {
+  flex: 0 0 420px;
+  background-color: $color-fondo-tarjeta;
+  border: 1px solid $color-borde-suave;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: $sombra-suave;
+}
+
+.imagenProducto {
+  width: 100%;
+  height: 480px;
+  object-fit: contain;
+  display: block;
+}
+
+.infoProducto {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tituloProducto {
+  font-size: 26px;
+  margin: 0;
+}
+
+.precioProducto {
+  font-size: 22px;
+  font-weight: 800;
+  margin: 0 0 8px 0;
+}
+
+.descripcionProducto {
+  color: $color-texto-suave;
+  line-height: 1.5;
+}
+
+.selectorTallas {
+  margin-top: 10px;
+}
+
+.etiquetaTallas {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.grupoTallas {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.opcionTalla {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+
+  input {
+    position: absolute;
+    opacity: 0;
+  }
+
+  span {
+    display: inline-block;
+    padding: 8px 14px;
+    border: 1px solid $color-borde-medio;
+    border-radius: 8px;
+    background-color: $color-fondo-tarjeta;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.15s ease;
+  }
+
+  input:checked + span {
+    border-color: $color-principal;
+    box-shadow: 0 0 0 3px rgba(255, 153, 0, 0.15);
+  }
+}
+
+.botonComprar {
+  margin-top: 10px;
+  width: 180px;
+  background-color: $color-principal;
+  color: #ffffff;
+  border: none;
+  border-radius: 999px;
+  padding: 10px 24px;
+  font-weight: 700;
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(0.95);
+    transform: translateY(-1px);
+  }
+}
+
+.infoEnvio {
+  margin-top: 6px;
+  color: $color-texto-secundario;
+  font-size: 14px;
+}
+
+.seccionRecomendados {
+  margin-top: 40px;
+
+  h2 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+}
+
+.gridRecomendados {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  justify-content: center;
+}
+
+.tarjetaEnlace {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.tarjetaRecomendado {
+  width: 240px;
+  background-color: $color-fondo-tarjeta;
+  border: 1px solid $color-borde-suave;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: $sombra-suave;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.10);
+  }
+
+  img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    display: block;
+    background-color: $color-fondo-tarjeta;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+}
+
+.nombreRecomendado {
+  margin: 4px 0;
+  font-weight: 600;
+}
+
+.precioRecomendado {
+  font-weight: 800;
+  margin: 4px 0 10px 0;
+}
+
+.botonMini {
+  background-color: $color-fondo-tarjeta;
+  color: #333333;
+  border: 1px solid #cccccc;
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
