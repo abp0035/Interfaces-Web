@@ -1,0 +1,36 @@
+
+@use "variables" as *;
+
+
+$primary: $color-principal;
+$secondary: $color-acento;
+$success: #22c55e;
+$info: #0ea5e9;
+$warning: #facc15;
+$danger: #ef4444;
+
+$body-bg: $color-fondo-base;
+$body-color: $color-texto;
+$font-family-base: $font-secundaria; 
+$border-radius: $radius-base;
+$border-radius-lg: $radius-tarjeta;
+$btn-border-radius: $radius-pill;
+
+
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+
+
+
+// Globales
+@import "generico";
+
+// Páginas principales
+@import "index";      
+@import "login";      
+@import "productos";   
+@import "productos2";  
+@import "producto";    
+@import "formulario";
+@import "carrito";    

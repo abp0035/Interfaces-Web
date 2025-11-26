@@ -1,25 +1,42 @@
-$color-principal: #ff9900;
-$color-texto: #000;
-$color-texto-suave: #444444;
-$color-texto-secundario: #666666;
+// =========================
+// PALETA DE COLORES GLOBAL
+// =========================
 
+// Colores principales de la marca
+$color-principal: #ff9900;    // Botones, títulos, detalles
+$color-acento: #ff5722;       // Ofertas, precios, hover
+$color-acento-secundario: #ff9800;
+
+// Fondos y bordes
 $color-fondo-tarjeta: #ffffff;
+$color-fondo-base: #ffffff;
 $color-borde-suave: #eeeeee;
 $color-borde-medio: #dddddd;
 
-$color-acento: #ff5722;
+// Texto
+$color-texto: #000000;
+$color-texto-suave: #444444;
+$color-texto-secundario: #666666;
 
-$color-principal: #ff9900;
-$color-fondo-tarjeta: #ffffff;
-$color-borde-suave: #eeeeee;
+// Otros colores
+$color-destacado-precio: #e64a19; // hover precio productos
+$color-alerta: #e91e63;
 
+// =========================
+// TIPOGRAFÍAS
+// =========================
 
 $font-base: "Montserrat", sans-serif;
 $font-secundaria: "Poppins", sans-serif;
 
-
-$font-base: "Montserrat", sans-serif;
-$font-secundaria: "Poppins", sans-serif;
+// =========================
+// SOMBRAS Y RADIUS
+// =========================
 
 $sombra-suave: 0 8px 24px rgba(0, 0, 0, 0.06);
 $sombra-hover: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+// Radius genérico
+$radius-base: 8px;
+$radius-tarjeta: 12px;
+$radius-pill: 999px;
