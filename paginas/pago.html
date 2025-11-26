@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ballers - Pago</title>
+
+  <link rel="icon" href="../assets/imagenes/varios/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">
+      <a href="../index.html">
+        <img src="../assets/imagenes/varios/logo.ico" alt="ballersLogo">
+        <span>BALLERS</span>
+      </a>
+    </div>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="./productos.html">CAMISETAS</a></li>
+        <li><a href="./productos2.html">MERCHANDISING</a></li>
+                <li><a href="./zapatillas.html" >ZAPATILLAS</a></li>
+
+        <li><a href="./formulario.html">CONTACTO</a></li>
+      </ul>
+    </nav>
+
+    <div class="usuarioCarrito">
+      <a href="./carrito.html">
+        <img src="../assets/imagenes/iconos/iconoCarrito.png" alt="iconoCarrito" class="iconoNav">
+      </a>
+      <a href="./logIn.html">
+        <img src="../assets/imagenes/iconos/iconoLogIn.png" alt="iconoUsuario" class="iconoNav">
+      </a>
+    </div>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="seccionContacto">
+    <div class="container">
+      <h2 class="mb-4">Finalizar compra</h2>
+
+      <div class="row g-4">
+        <!-- Columna datos de pago -->
+        <div class="col-lg-8">
+          <form class="formularioContacto">
+            <div class="bloqueFormulario mb-3">
+              <h5 class="mb-3">Datos del titular</h5>
+
+              <div class="filaFormulario">
+                <div class="campoFormulario">
+                  <label class="etiqueta form-label" for="nombre">Nombre</label>
+                  <input class="control form-control" type="text" id="nombre" placeholder="Nombre del titular" required>
+                </div>
+
+                <div class="campoFormulario">
+                  <label class="etiqueta form-label" for="apellidos">Apellidos</label>
+                  <input class="control form-control" type="text" id="apellidos" placeholder="Apellidos" required>
+                </div>
+              </div>
+
+              <div class="campoFormulario">
+                <label class="etiqueta form-label" for="email">Email</label>
+                <input class="control form-control" type="email" id="email" placeholder="tucorreo@ejemplo.com" required>
+                <p class="ayuda">Te enviaremos la confirmación de la compra a este correo.</p>
+              </div>
+            </div>
+
+            <div class="bloqueFormulario mb-3">
+              <h5 class="mb-3">Método de pago</h5>
+
+              <div class="opcionesLinea mb-3">
+                <div class="opcion form-check">
+                  <input class="form-check-input" type="radio" name="metodoPago" id="pagoTarjeta" checked>
+                  <label class="form-check-label" for="pagoTarjeta">Tarjeta</label>
+                </div>
+                <div class="opcion form-check">
+                  <input class="form-check-input" type="radio" name="metodoPago" id="pagoTransferencia">
+                  <label class="form-check-label" for="pagoTransferencia">Transferencia</label>
+                </div>
+              </div>
+
+              <!-- Datos tarjeta -->
+              <div class="filaFormulario">
+                <div class="campoFormulario">
+                  <label class="etiqueta form-label" for="numeroTarjeta">Número de tarjeta</label>
+                  <input class="control form-control" type="text" id="numeroTarjeta" placeholder="1234 5678 9012 3456">
+                </div>
+
+                <div class="campoFormulario">
+                  <label class="etiqueta form-label" for="caducidad">Caducidad</label>
+                  <input class="control form-control" type="text" id="caducidad" placeholder="MM/AA">
+                </div>
+
+                <div class="campoFormulario">
+                  <label class="etiqueta form-label" for="cvv">CVV</label>
+                  <input class="control form-control" type="text" id="cvv" placeholder="123">
+                </div>
+              </div>
+
+              <!-- Cuenta bancaria / IBAN -->
+              <div class="campoFormulario mt-3">
+                <label class="etiqueta form-label" for="iban">Cuenta bancaria (IBAN)</label>
+                <input class="control form-control" type="text" id="iban" placeholder="ES00 0000 0000 0000 0000 0000">
+                <p class="ayuda">Solo a efectos demostrativos. No se realizará ningún cobro real.</p>
+              </div>
+            </div>
+
+            <div class="bloqueFormulario mb-3">
+              <h5 class="mb-3">Dirección de envío</h5>
+
+              <div class="campoFormulario mb-2">
+                <label class="etiqueta form-label" for="direccion">Dirección</label>
+                <input class="control form-control" type="text" id="direccion" placeholder="Calle, número, piso...">
+              </div>
+
+              <div class="filaFormulario">
+                <div class="campoFormulario">
+                  <label class="etiqueta form-label" for="ciudad">Ciudad</label>
+                  <input class="control form-control" type="text" id="ciudad">
+                </div>
+                <div class="campoFormulario">
+                  <label class="etiqueta form-label" for="cp">Código postal</label>
+                  <input class="control form-control" type="text" id="cp">
+                </div>
+                <div class="campoFormulario">
+                  <label class="etiqueta form-label" for="pais">País</label>
+                  <input class="control form-control" type="text" id="pais" value="España">
+                </div>
+              </div>
+            </div>
+
+            <div class="accionesFormulario mt-3">
+              <button
+                type="button"
+                class="botonPrincipal btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#modalCompra">
+                Confirmar compra
+              </button>
+
+              <button type="button" class="botonSecundario btn btn-outline-secondary">
+                Cancelar
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Columna resumen -->
+        <div class="col-lg-4">
+          <div class="resumenCarrito">
+            <h3>Resumen</h3>
+            <div class="lineaResumen">
+              <span>Productos</span>
+              <span>79,99 €</span>
+            </div>
+            <div class="lineaResumen">
+              <span>Envío</span>
+              <span>4,99 €</span>
+            </div>
+            <div class="lineaResumen totalResumen">
+              <span>Total</span>
+              <span class="valorTotal">84,98 €</span>
+            </div>
+            <p class="ayuda mt-2">Los importes son solo de ejemplo para la práctica.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- MODAL COMPRA REALIZADA -->
+  <div class="modal fade" id="modalCompra" tabindex="-1" aria-labelledby="modalCompraLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalCompraLabel">Compra realizada con éxito</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          ¡Gracias por confiar en <strong>Ballers</strong>!  
+          <br>Te hemos enviado un correo con el resumen de tu pedido.
+        </div>
+        <div class="modal-footer">
+          <a href="../index.html" class="btn btn-primary">Volver al inicio</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="bordeInferiorGradiente"></div>
+    <div class="contenedor contenidoFooter">
+      <div class="logoFooter">
+        <img src="../assets/imagenes/varios/logo.ico" alt="logoBallers">
+      </div>
+
+      <div class="enlacesFooter">
+        <h4>Sobre nosotros</h4>
+        <ul>
+          <li><a href="#">Sobre Ballers</a></li>
+          <li><a href="#">¿Por qué Ballers?</a></li>
+          <li><a href="#">Historia</a></li>
+        </ul>
+      </div>
+
+      <div class="contactoFooter">
+        <h4>Contáctanos</h4>
+        <p>ballers@gmail.com</p>
+        <p>+977 9765346808</p>
+      </div>
+
+      <div class="socialFooter">
+        <h4>Redes sociales</h4>
+        <div class="iconosSociales">
+          <img src="../assets/imagenes/iconos/facebook.png" alt="Facebook">
+          <img src="../assets/imagenes/iconos/twitter.png" alt="Twitter">
+          <img src="../assets/imagenes/iconos/instagram.png" alt="Instagram">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

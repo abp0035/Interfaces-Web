@@ -2,91 +2,116 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ballers - Iniciar Sesión</title>
-    <link rel="icon" href="../assets/imagenes/varios/logo.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../css/generico.css">
-    <link rel="stylesheet" href="../css/logIn.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ballers - Iniciar Sesión</title>
+  <link rel="icon" href="../assets/imagenes/varios/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
+  <header class="header">
+    <div class="logo">
+      <a href="../index.html">
+        <img src="../assets/imagenes/varios/logo.ico" alt="ballersLogo">
+        <span>BALLERS</span>
+      </a>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="./productos.html">CAMISETAS</a></li>
+        <li><a href="./productos2.html">MERCHANDISING</a></li>
+                <li><a href="./zapatillas.html" >ZAPATILLAS</a></li>
 
-    <header class="header">
-        <div class="logo">
-            <a href="../index.html"><img  src="../assets/imagenes/varios/logo.ico" alt="ballersLogo"><span>BALLERS</span></a>
+        <li><a href="./formulario.html">CONTACTO</a></li>
+      </ul>
+    </nav>
+    <div class="usuarioCarrito">
+      <a href="./carrito.html">
+        <img src="../assets/imagenes/iconos/iconoCarrito.png" alt="iconoCarrito" class="iconoNav">
+      </a>
+      <a href="./logIn.html">
+        <img src="../assets/imagenes/iconos/iconoLogIn.png" alt="iconoUsuario" class="iconoNav">
+      </a>
+    </div>
+  </header>
+  <main class="seccionLogin">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5">
+          <h2 class="mb-4 text-center text-md-start">Iniciar sesión</h2>
+
+          <form class="formularioLogin needs-validation" action="#" method="post" novalidate>
+            <div class="campoFormulario mb-3">
+              <label class="etiqueta form-label" for="usuario">Usuario</label>
+              <input
+                class="control form-control"
+                type="text"
+                id="usuario"
+                name="usuario"
+                placeholder="Introduce tu usuario"
+                required>
+            </div>
+
+            <div class="campoFormulario mb-3">
+              <label class="etiqueta form-label" for="contrasena">Contraseña</label>
+              <input
+                class="control form-control"
+                type="password"
+                id="contrasena"
+                name="contrasena"
+                placeholder="Introduce tu contraseña"
+                required>
+            </div>
+
+            <div class="accionesFormulario mt-3">
+              <button type="submit" class="botonPrincipal btn btn-primary w-100">
+                Acceder
+              </button>
+            </div>
+
+            <p class="textoInferior mt-3">
+              ¿No tienes cuenta?
+              <a href="./registro.html">Regístrate aquí</a>
+            </p>
+          </form>
         </div>
-        <nav class="nav">
-            <ul>
-                <li><a href="../index.html">HOME</a></li>
-                <li><a href="./productos.html">CAMISETAS</a></li>
-                <li><a href="./productos2.html">MERCHANDISING</a></li>
-                <li><a href="./formulario.html">CONTACTO</a></li>
-            </ul>
-        </nav>
-        <div class="usuarioCarrito">
-                <a href="./carrito.html"><img src="../assets/imagenes/iconos/iconoCarrito.png" alt="iconoCarrito"
-                    class="iconoNav"></a>
-                <a href="./logIn.html"><img src="../assets/imagenes/iconos/iconoLogIn.png" alt="iconoUsuario" class="iconoNav"></a>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="bordeInferiorGradiente"></div>
+    <div class="contenedor contenidoFooter">
+      <div class="logoFooter">
+        <img src="../assets/imagenes/varios/logo.ico" alt="logoBallers">
+      </div>
+      <div class="enlacesFooter">
+        <h4>Sobre nosotros</h4>
+        <ul>
+          <li><a href="#">Sobre Ballers</a></li>
+          <li><a href="#">¿Por qué Ballers?</a></li>
+          <li><a href="#">Historia</a></li>
+        </ul>
+      </div>
+
+      <div class="contactoFooter">
+        <h4>Contáctanos</h4>
+        <p>ballers@gmail.com</p>
+        <p>+977 9765346808</p>
+      </div>
+
+      <div class="socialFooter">
+        <h4>Redes sociales</h4>
+        <div class="iconosSociales">
+          <img src="../assets/imagenes/iconos/facebook.png" alt="Facebook">
+          <img src="../assets/imagenes/iconos/twitter.png" alt="Twitter">
+          <img src="../assets/imagenes/iconos/instagram.png" alt="Instagram">
         </div>
-    </header>
-
-    <main class="seccionLogin contenedor">
-        <h2>Iniciar sesión</h2>
-
-        <form class="formularioLogin" action="#" method="post">
-            <div class="campoFormulario">
-                <label class="etiqueta" for="usuario">Usuario</label>
-                <input class="control" type="text" id="usuario" name="usuario" placeholder="Introduce tu usuario"
-                    required>
-            </div>
-
-            <div class="campoFormulario">
-                <label class="etiqueta" for="contrasena">Contraseña</label>
-                <input class="control" type="password" id="contrasena" name="contrasena"
-                    placeholder="Introduce tu contraseña" required>
-            </div>
-
-            <div class="accionesFormulario">
-                <button type="submit" class="botonPrincipal">Acceder</button>
-            </div>
-
-            <p class="textoInferior">¿No tienes cuenta? <a href="#">Regístrate aquí</a></p>
-        </form>
-    </main>
-
-    <footer>
-        <div class="bordeInferiorGradiente"></div>
-        <div class="contenedor contenidoFooter">
-            <div class="logoFooter">
-                <img src="../assets/imagenes/varios/logo.ico" alt="logoBallers">
-            </div>
-            <div class="enlacesFooter">
-                <h4>Sobre nosotros</h4>
-                <ul>
-                    <li><a href="#">Sobre Ballers</a></li>
-                    <li><a href="#">¿Por qué Ballers?</a></li>
-                    <li><a href="#">Historia</a></li>
-                </ul>
-            </div>
-            <div class="contactoFooter">
-                <h4>Contáctanos</h4>
-                <p>ballers@gmail.com</p>
-                <p>+977 9765346808</p>
-            </div>
-            <div class="socialFooter">
-                <h4>Redes sociales</h4>
-                <div class="iconosSociales">
-                    <img src="../assets/imagenes/iconos/facebook.png" alt="Facebook">
-                    <img src="../assets/imagenes/iconos/twitter.png" alt="Twitter">
-                    <img src="../assets/imagenes/iconos/instagram.png" alt="Instagram">
-                </div>
-            </div>
-        </div>
-    </footer>
-
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
